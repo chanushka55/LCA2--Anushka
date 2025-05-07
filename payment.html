@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pastronomy</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><h1>🍰 Pastronomy</h1></div>
+    <ul class="nav-links">
+      <li><a href="landingpage.html">Home</a></li>
+      <li>About</li>
+      <li><a href="productpage.html"></a>Product</li>
+      <li>Contact us</li>
+    </ul>
+    <div class="nav-icons">
+      <input type="text" id="searchInput" placeholder="Search pastries...">
+      <span><img src="addtocarticon.jpg" width="40px" height="40px"></span>
+      <span><img src="profileicon.jpg" width="30px" height="35px"></span>
+    </div>
+  </nav>
+    <main>
+        <div class="payment-info">
+          <h2>Payment</h2>
+          <div class="section-title">SHIPPING ADDRESS</div>
+          <p>Anushka<br>No.19/20, Opposite Magarpatta South Gate, Bhosale Nagar<br>Hadapsar, Pune, Maharashtra 411013, India<br>(123) 456-789</p>
+          <div class="edit">Edit</div>
+    
+          <div class="section-title">PAYMENT INFORMATION</div>
+          <p>Anushka<br>••••1234<br>06/05/2025</p>
+          <div class="edit">Edit</div>
+        </div>
+    
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="order-item">
+            <img src="https://i.pinimg.com/736x/10/5e/67/105e673f24789013f7f44f0e046df082.jpg" alt="Baklava">
+            <div>
+              <div>Baklava</div>
+              <div>₹399</div>
+              <div class="quantity">
+                <button onclick="decreaseQty()">-</button>
+                <br>
+                <span id="qty">1</span>
+                <br> 
+                <button onclick="increaseQty()">+</button>
+              </div>
+            </div>
+          </div>
+          <div>Subtotal: ₹<span id="subtotal">399</span></div>
+          <div>Shipping: Free</div>
+          <div class="order-total">ORDER TOTAL: ₹<span id="total">399</span></div>
+          <button class="place-order-btn" onclick="showThanks()">PLACE ORDER</button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <h4>Pastronomy</h4>
+            <p>Delight in Gourmet Delicacies Designed to Impress Your Senses</p>
+            <p>📍 18 Road Sukamaju Street, 120<br>Jakarta, Indonesia</p>
+            <p>📞 +62 1234 5678 9101</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h5>Menu</h5>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Product</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div>
+              <h5>Account</h5>
+              <ul>
+                <li>My Account</li>
+                <li>My Orders</li>
+                <li>Wishlist</li>
+                <li>Returns</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="footer-bottom">
+            <p>© 2025 Pastronomy. All rights reserved.</p>
+          </div>
+        
+      </footer>
+    
+      <script>
+        const qtyElement = document.getElementById("qty");
+        const subtotalElement = document.getElementById("subtotal");
+        const totalElement = document.getElementById("total");
+    
+        function increaseQty() {
+          qtyElement.textContent = parseInt(qtyElement.textContent) + 1;
+          updateTotal();
+        }
+    
+        function decreaseQty() {
+          if (parseInt(qtyElement.textContent) > 1) {
+            qtyElement.textContent = parseInt(qtyElement.textContent) - 1;
+            updateTotal();
+          }
+        }
+    
+        function updateTotal() {
+          const qty = parseInt(qtyElement.textContent);
+          const pricePerItem = 399;
+          const subtotal = (qty * pricePerItem).toFixed(2);
+          subtotalElement.textContent = subtotal;
+          totalElement.textContent = subtotal;
+        }
+    
+        function showThanks() {
+          const main = document.querySelector("main");
+          const thankYou = document.createElement("div");
+          thankYou.textContent = "Thank you for your order!";
+          thankYou.style.padding = "2rem";
+          thankYou.style.fontSize = "1.5rem";
+          thankYou.style.color = "#A46A28";
+          main.parentElement.insertBefore(thankYou, main.nextSibling);
+        }
+      </script>
+    </body>
+    
+    </html>

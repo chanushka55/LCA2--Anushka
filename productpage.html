@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pastronomy</title>
+  <link rel="stylesheet" href="productpage.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><h1>🍰 Pastronomy</h1></div>
+    <ul class="nav-links">
+      <li><a href="landingpage.html">Home</a></li>
+      <li>About</li>
+      <li>Product</li>
+      <li>Contact us</li>
+    </ul>
+    <div class="nav-icons">
+      <input type="text" id="searchInput" placeholder="Search pastries...">
+      <span><img src="addtocarticon.jpg" width="40px" height="40px"></span>
+      <span><img src="profileicon.jpg" width="30px" height="35px"></span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h1>The Pastry We Make</h1>
+      <p>
+        Explore a world of exquisite flavors and artisanal creations,
+        where every bite tells a story of passion and perfection in
+        pastry craftsmanship.
+      </p>
+    </section>
+
+    <section class="product-grid" id="productGrid">
+      <div class="card" data-name="croissant">
+        <div class="image-wrapper">
+          <img src="https://i.pinimg.com/736x/44/70/2e/44702ee4ada44bf389cb5fa287b2abf5.jpg" alt="Croissant">
+          <span class="favorite-icon" onclick="toggleFavorite(this)">♡</span>
+        </div>
+        <div class="info">
+          <h3>Croissant</h3>
+          <div class="rating">⭐ 4.9</div>
+          <p>₹250</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card" data-name="cromboloni">
+        <img src="https://i.pinimg.com/736x/70/c3/40/70c340c219d71ad1659d0dcd89f1147b.jpg" alt="Cromboloni">
+        <div class="info">
+          <h3>Cromboloni</h3>
+          <div class="rating">⭐ 4.5</div>
+          <p>₹300</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card" data-name="pastel de nata">
+        <img src="https://i.pinimg.com/736x/ce/93/27/ce9327412c3e35acdbda6c8dae2189f5.jpg" alt="Pastel de nata">
+        <div class="info">
+          <h3>Pastel de nata</h3>
+          <div class="rating">⭐ 4.7</div>
+          <p>₹230</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card" data-name="baklava">
+       <a href="productbaklava.html"><img src="https://i.pinimg.com/736x/10/5e/67/105e673f24789013f7f44f0e046df082.jpg" alt="Baklava"></a>
+        <div class="info">
+          <h3>Baklava</h3>
+          <div class="rating">⭐ 5.0</div>
+          <p>₹399</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="prod-grid" id="prodGrid">
+      <div class="card" data-name="eclair">
+        <img src="https://i.pinimg.com/736x/b5/63/8b/b5638bed7ab53eaa109cad4c8aeb407c.jpg" alt="Eclair">
+        <div class="info">
+          <h3>Eclair</h3>
+          <div class="rating">⭐ 4.7</div>
+          <p>₹299</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      
+      <div class="card" data-name="danish pastry">
+        <img src="https://i.pinimg.com/736x/e0/4a/29/e04a29cb60d51513f38b3ed822ec7da1.jpg" alt="Danish Pastry">
+        <div class="info">
+          <h3>Danish Pastry</h3>
+          <div class="rating">⭐ 4.7</div>
+          <p>₹249</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card" data-name="cannolli">
+        <img src="https://i.pinimg.com/736x/4e/36/e5/4e36e5dbae8de82a2bfd6c163920250e.jpg" alt="Cannolli">
+        <div class="info">
+          <h3>Cannolli</h3>
+          <div class="rating">⭐ 5.0</div>
+          <p>₹339</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+
+      
+      <div class="card" data-name="palmier">
+        <img src="https://i.pinimg.com/736x/54/fb/69/54fb69bb8638456ddd499b1e238289d9.jpg" alt="Palmier">
+        <div class="info">
+          <h3>Palmier</h3>
+          <div class="rating">⭐ 5.0</div>
+          <p>₹399</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>Pastronomy</h4>
+        <p>Delight in Gourmet Delicacies Designed to Impress Your Senses</p>
+        <p>📍 18 Road Sukamaju Street, 120<br>Jakarta, Indonesia</p>
+        <p>📞 +62 1234 5678 9101</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Menu</h5>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Account</h5>
+          <ul>
+            <li>My Account</li>
+            <li>My Orders</li>
+            <li>Wishlist</li>
+            <li>Returns</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="footer-bottom">
+        <p>© 2025 Pastronomy. All rights reserved.</p>
+      </div>
+    
+  </footer>
+  <script>
+  const searchInput = document.getElementById('searchInput');
+    const productCards = document.querySelectorAll('.card');
+    
+    searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+    
+      productCards.forEach(card => {
+        const name = card.getAttribute('data-name');
+        if (name.includes(searchTerm)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+    
+    function toggleFavorite(icon) {
+    icon.classList.toggle('favorited');
+    icon.textContent = icon.classList.contains('favorited') ? '♥' : '♡';
+  }
+  
+  </script>
+</body>
+</html>

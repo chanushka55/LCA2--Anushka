@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1D1D;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: #A46A28;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-icons input {
+    padding: 0.4rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .breadcrumb {
+    padding: 20px 30px;
+    color: #E3E3E3;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    gap: 40px;
+  }
+  
+  .images {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .main-image img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product-info {
+    max-width: 400px;
+  }
+  
+  .product-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #E3E3E3;
+  }
+  
+  .rating {
+    color: #A46A28;
+    font-size: 18px;
+  }
+  
+  .description {
+    margin: 15px 0;
+    color: #E3E3E3;
+    line-height: 1.5;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+  }
+  
+  .quantity button {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #141414;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-to-cart {
+    background-color: #A46A28;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s
+  }
+  .add-to-cart:hover {
+    background-color: #e3e3e3;
+    color: #141414;
+  }
+  
+  .similar-heading {
+    padding: 20px 30px;
+    font-size: 22px;
+    color: #FFFFFF;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .info {
+    padding: 1rem;
+  }
+  
+  .info h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .rating {
+    color: gold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+
+  .footer {
+    background-color: #1D1D1D;
+    color: #E3E3E3;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-brand {
+    max-width: 300px;
+  }
+  
+  .footer-brand h4 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .footer-links h5 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .footer-bottom {
+    background-color: #141414;
+    border-top: 1px solid #232323;
+    text-align: center;
+    padding: 15px ;
+    color: #E3E3E3;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }

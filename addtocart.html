@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pastronomy</title>
+  <link rel="stylesheet" href="productbaklava.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><h1>🍰 Pastronomy</h1></div>
+    <ul class="nav-links">
+      <li><a href="landingpage.html">Home</a></li>
+      <li>About</li>
+      <li><a href="productpage.html">Product</a></li>
+      <li>Contact us</li>
+    </ul>
+    <div class="nav-icons">
+      <input type="text" placeholder="Search">
+      <span><img src="addd.png" width="40px" height="40px"></span>
+      <span><img src="profileicon.jpg" width="30px" height="35px"></span>
+    </div>
+  </nav>
+
+
+
+  <main class="product-container">
+    <div class="images">
+      <div class="thumbnails">
+        <img src="https://i.pinimg.com/736x/d0/ed/15/d0ed15686da04bdcee3ad799fcfe234a.jpg" alt="Baklava 1" />
+        <img src="https://i.pinimg.com/736x/8e/ec/b3/8eecb37510275c879d684300903f767f.jpg" alt="Baklava 2" />
+        <img src="https://i.pinimg.com/736x/03/c7/a7/03c7a762770fd89ba9321a41ed96529f.jpg" alt="Baklava 3" />
+        <img src="https://i.pinimg.com/736x/20/7f/08/207f088efc9e955a9cb3d0edc6d0b870.jpg" alt="Baklava 4" />
+      </div>
+      <div class="main-image">
+        <img src="https://i.pinimg.com/736x/10/5e/67/105e673f24789013f7f44f0e046df082.jpg" alt="Main Baklava" />
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Baklava</h1>
+      <p class="price">₹399</p>
+      <p class="rating">⭐ 4.4</p>
+      <p class="description">
+        Savor the timeless allure of our artisanal baklava, a delicate blend of premium nuts and honey-infused phyllo pastry. Each bite offers a symphony of flavors and textures, creating an indulgent experience that captivates the senses.
+      </p>
+      <div class="quantity-selector">
+        <button id="decrement">−</button>
+        <span id="quantity">1</span>
+        <button id="increment">+</button>
+      </div>
+      <br>
+      <a href="address.html"><button class="add-to-cart">Buy Now</button></a> <button class="add-to-cart">Remove from Add to cart</button> 
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>Pastronomy</h4>
+        <p>Delight in Gourmet Delicacies Designed to Impress Your Senses</p>
+        <p>📍 18 Road Sukamaju Street, 120<br>Jakarta, Indonesia</p>
+        <p>📞 +62 1234 5678 9101</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Menu</h5>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Account</h5>
+          <ul>
+            <li>My Account</li>
+            <li>My Orders</li>
+            <li>Wishlist</li>
+            <li>Returns</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="footer-bottom">
+        <p>© 2025 Pastronomy. All rights reserved.</p>
+      </div>
+    
+  </footer>
+  </body>
+  <script>const thumbnails = document.querySelectorAll('.thumbnails img');
+    const mainImage = document.querySelector('.main-image img');
+    
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        mainImage.src = thumbnail.src;
+      });
+    });
+
+  const quantityDisplay = document.getElementById('quantity');
+  const incrementBtn = document.getElementById('increment');
+  const decrementBtn = document.getElementById('decrement');
+
+  let quantity = 1;
+
+  incrementBtn.addEventListener('click', () => {
+    quantity++;
+    quantityDisplay.textContent = quantity;
+  });
+
+  decrementBtn.addEventListener('click', () => {
+    if (quantity > 1) {
+      quantity--;
+      quantityDisplay.textContent = quantity;
+    }
+  });
+</script>
+    </script>
+  </html>

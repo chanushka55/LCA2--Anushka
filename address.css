@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1D1D;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: #A46A28;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-icons input {
+    padding: 0.4rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+
+  :root {
+    --primary: #A46A28;
+    --background: #141414;
+    --section: #1D1D1D;
+    --input-bg: #E3E3E3;
+    --text: #FFFFFF;
+    --light-text: #ccc;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  nav a {
+    color: var(--text);
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .checkout-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .form-section, .summary-section {
+    background-color: var(--section);
+    padding: 2rem;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .form-section label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .form-section input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--input-bg);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .name-fields, .city-state-fields {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .name-fields div, .city-state-fields div {
+    flex: 1;
+  }
+  
+  .summary-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .item img {
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+  }
+  
+  .quantity-controls button {
+    background-color: var(--input-bg);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .order-summary {
+    margin-top: 2rem;
+  }
+  
+  .total-section div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .continue-btn {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .checkout-container {
+      flex-direction: column;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .footer {
+    background-color: #1D1D1D;
+    color: #E3E3E3;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-brand {
+    max-width: 300px;
+  }
+  
+  .footer-brand h4 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .footer-links h5 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .footer-bottom {
+    background-color: #141414;
+    border-top: 1px solid #232323;
+    text-align: center;
+    padding: 15px ;
+    color: #E3E3E3;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
